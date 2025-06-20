@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Автопарк</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="container">
+    <h1>Автопарк</h1>
+    
+    <div class="search-box">
+      <input type="text" id="brandInput" placeholder="Введите марку (bmw, mercedes, audi)">
+      <button id="searchBtn">Найти</button>
+    </div>
+    
+    <div id="error" class="error hidden"></div>
+    
+    <div id="results" class="hidden">
+      <h2>Доступные автомобили</h2>
+      <ul id="carList"></ul>
+    </div>
+    
+    <div id="imageContainer" class="hidden">
+      <h2>Выбранный автомобиль</h2>
+      <div id="loadingIndicator" class="loading hidden">
+        <div class="progress-container">
+          <div id="progressBar" class="progress-bar"></div>
+          <span id="progressText">0%</span>
+        </div>
+      </div>
+      <img id="carImage" alt="Изображение автомобиля">
+      <button id="saveBtn" class="hidden">Сохранить</button>
+    </div>
+    
+    <div id="savedContainer" class="hidden">
+      <h2>Сохранённые автомобили</h2>
+      <ul id="savedList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
